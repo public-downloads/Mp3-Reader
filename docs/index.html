@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio Grabber</title>
+  <meta name="description" content="Save audio or video from YouTube and other sites as MP3, M4A, Opus, FLAC, WAV or MP4. Free for Windows, runs entirely on your computer, with an optional Firefox extension.">
+  <!-- Only needed on a custom domain: the GitHub repository as "owner/repo". On *.github.io it's detected automatically. -->
+  <meta name="github-repo" content="">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top">
+        <img src="icon.svg" alt="" width="32" height="32">
+        <span>Audio Grabber</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#install">Install</a>
+        <a href="#firefox">Firefox</a>
+        <a href="#privacy">Privacy</a>
+        <a data-repo-path="" href="#">GitHub</a>
+      </div>
+    </nav>
+
+    <section class="hero wrap" id="top">
+      <div class="hero-text">
+        <p class="eyebrow">Free · Windows 10 &amp; 11 · No account</p>
+        <h1>Save audio and video from YouTube, on your own computer.</h1>
+        <p class="lede">Paste a link and get an MP3, M4A, Opus, FLAC, WAV or MP4 with the title, artist and cover art filled in. Whole playlists become tidy album folders. Nothing is uploaded anywhere.</p>
+        <div class="cta">
+          <a class="btn primary" data-release="AudioGrabber-win64.zip" href="#install">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 19h14"/></svg>
+            <span>Download for Windows<small>Latest build · ZIP · about 130 MB</small></span>
+          </a>
+          <a class="btn ghost" href="#firefox">Add to Firefox</a>
+        </div>
+        <p class="fine">
+          <a data-release="AudioGrabber-win64.zip.sha256" href="#">SHA-256 checksum</a> ·
+          <a data-repo-path="/releases" href="#">All releases</a> ·
+          <a data-repo-path="/blob/main/SECURITY.md" href="#">How it's verified</a>
+        </p>
+      </div>
+      <figure class="shot">
+        <picture>
+          <source srcset="img/app-dark.webp" media="(prefers-color-scheme: dark)">
+          <img src="img/app-light.webp" width="1578" height="1033"
+               alt="The Audio Grabber window: a box for links, format and quality choices, and a list of downloads with their progress.">
+        </picture>
+      </figure>
+    </section>
+  </header>
+
+  <main>
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+      <h2 id="features-title">Everything you need, nothing you don't</h2>
+      <div class="grid">
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+          <h3>Every common format</h3>
+          <p>MP3 up to 320 kbps, M4A, Opus, FLAC, WAV, the original audio untouched, or MP4 video up to 4K.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>
+          <h3>Playlists become albums</h3>
+          <p>A folder named after the playlist, numbered tracks, one shared cover and album tags, so your music player shows it as a proper album.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5M14.5 14.5 20 20M8.5 8.5 12 12"/></svg>
+          <h3>Clip just the part you want</h3>
+          <p>Enter a start and end time like 1:20 to 2:45 and save only that section, cut exactly.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
+          <h3>File names your way</h3>
+          <p>Title, Artist - Title, Title - Artist or Date - Title. Cover art and tags are embedded automatically.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" class="fill"/></svg>
+          <h3>Light, dark and a splash of colour</h3>
+          <p>Follows your Windows theme, with Classic, Olive, Crimson and Olive &amp; crimson colour schemes.</p>
+        </article>
+        <article class="card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7"/><path d="m15 15 3 3 4-5"/></svg>
+          <h3>Firefox right-click menu</h3>
+          <p>Right-click any page or link and choose Download as ▸ MP3, and the app does the rest in the background.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="install" aria-labelledby="install-title">
+      <div class="wrap">
+        <h2 id="install-title">Up and running in a minute</h2>
+        <ol class="steps">
+          <li>
+            <h3>Download and unzip</h3>
+            <p>Get the latest build and unzip the <code>AudioGrabber</code> folder anywhere you like. Nothing else needs installing: ffmpeg and everything else is included.</p>
+            <a class="btn primary small" data-release="AudioGrabber-win64.zip" href="#">Download for Windows</a>
+          </li>
+          <li>
+            <h3>Start AudioGrabber.exe</h3>
+            <p>The first time, Windows SmartScreen may say it doesn't know the app yet. Click <strong>More info ▸ Run anyway</strong>. That's because the app isn't code-signed, not because anything is wrong.</p>
+          </li>
+          <li>
+            <h3>Paste a link, press Download</h3>
+            <p>Pick a format, tick <em>Whole playlist</em> for albums, and your files land in <code>Music\Audio Grabber</code> unless you choose another folder.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section wrap split" id="firefox" aria-labelledby="firefox-title">
+      <div>
+        <h2 id="firefox-title">The Firefox extension</h2>
+        <p>Add a toolbar button and a right-click <strong>Download as</strong> menu to Firefox. The extension is signed by Mozilla, collects no data, and hands the work to Audio Grabber on your computer, so start the app once before using it.</p>
+        <ul class="ticks">
+          <li>Download the page you're on, or any link, in one click</li>
+          <li>Choose format and quality right in the toolbar popup</li>
+          <li>A notification when a download is done; click it to open the folder</li>
+        </ul>
+      </div>
+      <div class="ext-box">
+        <img src="icon.svg" alt="" width="64" height="64">
+        <a class="btn primary" href="audio-grabber.xpi" id="xpi">Add to Firefox</a>
+        <p class="fine" id="xpi-hint">Firefox will ask you to allow the installation. Needs Firefox 140 or newer on Windows.</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="privacy-title">Private by design</h2>
+          <p>Audio Grabber runs entirely on your computer. There's no account, no analytics and no cloud service. It only talks to the site you're downloading from, and to PyPI when <em>you</em> choose to update its download engine.</p>
+        </div>
+        <ul class="ticks">
+          <li>The desktop app opens no network port</li>
+          <li>YouTube's challenge code runs in a sandbox with no access to your files</li>
+          <li>Files can only be saved inside your download folder</li>
+          <li>Bundled tools are pinned to checksums; updates are only accepted from the official yt-dlp project</li>
+          <li><a data-repo-path="/blob/main/SECURITY.md" href="#">Read the security notes</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section wrap" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <details>
+        <summary>Downloads stopped working. What now?</summary>
+        <p>Sites change often. Choose <strong>Tools ▸ Update yt-dlp</strong> in the app, then restart it. That fixes almost every problem.</p>
+      </details>
+      <details>
+        <summary>Does it work on Mac or Linux?</summary>
+        <p>The ready-made download is for Windows. The source code also runs on macOS and Linux with Python; see the README on GitHub.</p>
+      </details>
+      <details>
+        <summary>Why is the download so big?</summary>
+        <p>It includes everything it needs, ffmpeg for converting and Deno for YouTube, so you don't have to install anything else.</p>
+      </details>
+      <details>
+        <summary>Is it free?</summary>
+        <p>Yes, and the source code is public on GitHub.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Downloading may be against a site's terms of service, and copyright still applies to what you save. Use Audio Grabber for your own uploads, Creative Commons or public-domain material, or content you have permission to keep.</p>
+      <p>Built on yt-dlp, ffmpeg and Deno. Not affiliated with YouTube, Google or Mozilla.
+        <a data-repo-path="" href="#">Source code</a> · <a data-repo-path="/blob/main/SECURITY.md" href="#">Security</a></p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>
